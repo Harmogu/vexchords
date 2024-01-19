@@ -24,6 +24,7 @@ class ChordBox {
         defaultColor: '#666',
         bgColor: '#fff',
         labelColor: '#fff',
+        strokeColor: '#FC8181',
         fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
         fontSize: undefined,
         fontStyle: 'light',
@@ -195,7 +196,7 @@ class ChordBox {
     }
 
     if (label) {
-      const fontSize = this.metrics.fontSize * 0.55;
+      const fontSize = this.metrics.fontSize * 1;
       const textYShift = fontSize * 0.66;
       this.drawText(x, y - this.fretSpacing / 2 - textYShift, label, {
         weight: this.params.labelWeight,
